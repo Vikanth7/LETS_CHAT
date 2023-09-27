@@ -5,6 +5,11 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <script>
+      function register(){
+        Location.assign("/views/register");
+      }
+    </script>
     <div class="box_container">
       <form method="=POST">
       <div class="login_form">
@@ -14,7 +19,7 @@
         <input type="password" id="'upass" placeholder="Password"><br><br>
         <button>Login</button>
         <a href="/views/register">
-          <button>Signup</button>
+          <button onclick="register()">Signup</button>
         </a>
       </div>
       </form>
