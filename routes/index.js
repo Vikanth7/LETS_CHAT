@@ -2,11 +2,11 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', ()=> {
-  res.render('index');
+router.get('/', function(req,res,next){
+  res.render('Login');
 });
 
-router.get('/views/register',()=> {
+router.get('/register', function(req,res,next) {
   res.render('register');
 })
 

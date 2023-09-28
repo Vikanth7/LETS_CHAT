@@ -6,21 +6,19 @@
   </head>
   <body>
     <script>
-      function register(){
-        Location.assign("/views/register");
-      }
+     
     </script>
     <div class="box_container">
-      <form method="=POST">
+      <form method="POST">
       <div class="login_form">
+        <img src="/images/Logo.jpg" style="position: fixed; width: 6.9em;height: auto ;left: 370px;border: 3px solid;" alt="LETS-CHAT">
+        <label class="logo_text">LETS-CHAT</label>
         <label class="Uname_font">Enter your Username</label><br>
         <input type="text" id="uname" placeholder="Username"><br>
         <label class="Upass_font">Enter your password</label><br>
         <input type="password" id="'upass" placeholder="Password"><br><br>
         <button>Login</button>
-        <a href="/views/register">
-          <button onclick="register()">Signup</button>
-        </a>
+        <button type="submit">Signup</button>
       </div>
       </form>
     </div>

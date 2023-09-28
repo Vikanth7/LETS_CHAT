@@ -6,6 +6,12 @@
   display:flex;
   justify-content: center;
 }
+.logo_text{
+  left: 385px;
+  position: fixed;
+  top: 311px;
+}
+
 .Uname_font{
   font-size: large;
 }
