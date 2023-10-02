@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 
@@ -6,14 +7,23 @@ router.get('/', function(req,res,next){
   res.render('Home1');
 });
 
-function register() {
-  
-  // Define a route to handle the button click and perform the redirect
-  router.get('/', (req, res) => {
-    // Use a 302 Found status code to indicate a temporary redirect
-    res.redirect('/register');
-  });
-}
+router.get('/register',(req,res)=>{
+  res.render('register');
+});
+
+router.get('/Home2',(req,res)=>{
+  res.render('Home2');
+});
+
+router.get('/Home1',(req,res)=>{
+  res.render('Home1');
+})
+router.post('/register',(req,res)=>{
+  const details = req.body
+  console.log(details)
+  res.redirect('/register')
+})
+
 
 
 module.exports = router;

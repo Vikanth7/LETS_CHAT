@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const loginSchema=mongoose.Schema({
+const userSchema= new mongoose.Schema({
     name : {
         type : String,
         required : true,
@@ -8,42 +8,23 @@ const loginSchema=mongoose.Schema({
         type : String,
         required : true,
     },
-}
-)
- const registerSchema=mongoose.Schema({
     email : {
         type : String,
-        required : true
+        required : true,
     },
-    Username : {
-        type : String,
-        required : true
-    },
-    password : {
-        type : String,
-        required : true
-    }
- })
-const messageSchema = mongoose.Schema({
-    sender : {
-        type : String,
-        required : true
-    },
-    info : {
-        type : [String],
-        required : true
-    }
-}) 
+    messages : [{
+        msg : String,
+    }]
+}
+)
+ 
 
-const loginModel = mongoose.model('login',loginSchema);
-const registerModel = mongoose.model('register',registerSchema);
-const messageModel = mongoose.model('message',messageSchema);
+const userModel = mongoose.model('User',userSchema);
+
 
 
 
 
 module.exports={
-    loginModel,
-    registerModel,
-    messageModel
+    userModel,
 }
