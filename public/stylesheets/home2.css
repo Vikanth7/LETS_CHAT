@@ -1,5 +1,6 @@
-  body{
+body{
     margin: 0;
+    background-color: blanchedalmond;
   }
   .navbar{
     overflow: hidden;
@@ -20,18 +21,24 @@
       }
       
       .navbar a.active {
-        background-color: blueviolet;
+       
         color: black;
         float: left;
     }
         .navbar a.right{
         color: black;
+        background-color: blueviolet;
         float: right;
     }
-    .navbar a.middle{
-        color: black;
-    }
     .screen{
-        background-color: bisque;
-        padding: 257.5px;  
+    background-color: aquamarine;  
+    width: 200px;
+    height: 90px;
+    border: 3px solid;
+    padding: 150px;
+    margin-top: 50px;
+    margin-left: 400px;
+    position: relative;
+    top: 5px;
+  
     }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Messages</title>
+        <link rel="stylesheet" href="/stylesheets/home1.css">
+    </head>
+    <body>
+            <div class="navbar">
+                <a class="active">Messages</a>
+                <a class="right" href="#Profile">Profile</a>
+            </div>
+            <button class="open-button" onclick="openForm()"><b>LETS-CHAT</b></button>
+
+<div class="chat-popup" id="myForm">
+  <form class="form-container">
+    <label><b>Name</b></label><br>
+    <input type="text" placeholder="Username"><br>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<div class="split left">
+    <div class="centered">
+    </div>
+  </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    </body>
+</html>
